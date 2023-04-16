@@ -9,8 +9,9 @@ d = 0.8
 #                 [0, 0, 0, 0, 0, 0, 0],
 #                 [0, 0, 0, 0, 0, 0, 0]])
 
-print("Please enter the number of nodes for lesson 3:")
-m3 = int(input())
+print("Please enter the level of nodes for lesson 3:")
+m3 = pow(2, int(input())) - 1
+print(m3)
 mat3 = np.zeros((m3, m3), dtype=int)
 mat3[0][0] = 1
 for i in range(m3):
